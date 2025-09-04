@@ -1,0 +1,43 @@
+{
+  "pageInfo": {
+    "title": "contact",
+    "description": "get in touch with me for collaboration opportunities, questions, or just to say hello."
+  },
+  "contactDetails": {
+    "sectionTitle": "contact information",
+    "contacts": [
+      {
+        "id": 1,
+        "type": "email",
+        "label": "(relay) email: ",
+        "value": "mf0tdnxo7@mozmail.com",
+        "link": "mailto:mf0tdnxo7@mozmail.com",
+        "external": false
+      },
+      {
+        "id": 2,
+        "type": "linkedin",
+        "label": "linkedIn: ",
+        "value": "https://www.linkedin.com/in/mahirg/",
+        "link": "https://www.linkedin.com/in/mahirg/",
+        "external": true
+      },
+      {
+        "id": 3,
+        "type": "github",
+        "label": "gitHub: ",
+        "value": "https://github.com/fizy069",
+        "link": "https://github.com/fizy069",
+        "external": true
+      },
+      {
+        "id": 4,
+        "type": "twitter",
+        "label": "twitter: ",
+        "value": "https://x.com/fizy_069",
+        "link": "https://x.com/fizy_069",
+        "external": true
+      }
+    ]
+  }
+}

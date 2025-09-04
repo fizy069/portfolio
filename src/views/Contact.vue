@@ -1,20 +1,28 @@
 <template>
   <div class="contact">
-    <h1>Contact</h1>
+    <h1>{{ contactInfo.pageInfo.title }}</h1>
 
-    <p>Get in touch with me for collaboration opportunities, questions, or just to say hello.</p>
+    <p>{{ contactInfo.pageInfo.description }}</p>
 
     <div class="contact-info">
-      <h2>Contact Information</h2>
-      <p><strong>Email:</strong> <a href="mailto:mf0tdnxo7@mozmail.com">mf0tdnxo7@mozmail.com</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mahirg/" target="_blank">https://www.linkedin.com/in/mahirg/</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/fizy069" target="_blank">https://github.com/fizy069</a></p>
-      <p><strong>Twitter:</strong> <a href="https://x.com/fizy_069" target="_blank">https://x.com/fizy_069</a></p>
+      <h2>{{ contactInfo.contactDetails.sectionTitle }}</h2>
+      <p v-for="contact in contactInfo.contactDetails.contacts" :key="contact.id">
+        <strong>{{ contact.label }} </strong>
+        <a :href="contact.link" :target="contact.external ? '_blank' : '_self'">
+          {{ contact.value }}
+        </a>
+      </p>
     </div>
 
   </div>
 </template>
 
+<script setup>
+import { ref } from 'vue'
+import contactInfoData from '@/data/contactInfo.json'
+
+const contactInfo = ref(contactInfoData)
+</script>
 
 <style scoped>
 .contact-info {
