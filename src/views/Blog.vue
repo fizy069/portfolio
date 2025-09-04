@@ -1,8 +1,8 @@
 <template>
   <div class="blog">
-    <h1>Writing</h1>
+    <h1>blog</h1>
     
-    <!-- <p>Articles and thoughts.</p> -->
+    <p>excerpts on my thoughts and some of the stuff i built.</p>
 
     <div class="search-section">
       <input 

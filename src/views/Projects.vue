@@ -1,19 +1,14 @@
 <template>
   <div class="projects">
     <div class="projects-header">
-      <h1>Projects</h1>
+      <h1>projects</h1>
       <p class="projects-intro">
-        A collection of projects that showcase my skills and experience in web development. 
-        Each project represents a unique challenge and learning opportunity.
+        gist of some of the projects i've worked on lately.
       </p>
     </div>
 
     <div class="project-list">
-      <div 
-        v-for="project in projects" 
-        :key="project.id"
-        class="project-item"
-      >
+      <div v-for="project in projects" :key="project.id" class="project-item">
         <div class="project-header">
           <h3>{{ project.name }}</h3>
           <span v-if="project.status" class="project-status" :class="project.status">
@@ -22,7 +17,7 @@
         </div>
         <p class="project-description">{{ project.description }}</p>
         <div class="project-tech">
-          <strong>Built with:</strong> 
+          <strong>Built with: </strong>
           <span class="tech-list">{{ project.technologies.join(', ') }}</span>
         </div>
         <div class="project-links">
@@ -170,27 +165,27 @@ const projects = ref(projectsData)
   .projects-intro {
     font-size: 1rem;
   }
-  
+
   .project-item {
     padding: 1.5rem;
     margin-bottom: 2rem;
   }
-  
+
   .project-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
   }
-  
+
   .project-header h3 {
     font-size: 1.2rem;
   }
-  
+
   .project-links {
     flex-direction: column;
     gap: 0.5rem;
   }
-  
+
   .project-link {
     text-align: center;
   }

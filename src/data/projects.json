@@ -1,56 +1,43 @@
 [
-  {
-    "id": 1,
-    "name": "Portfolio Website",
-    "description": "A responsive portfolio website built with Vue.js featuring clean design and smooth user experience.",
-    "technologies": ["Vue.js", "CSS3", "JavaScript", "Vite"],
-    "status": "completed",
-    "demo": "#",
-    "github": "#"
-  },
-  {
-    "id": 2,
-    "name": "Task Manager App",
-    "description": "Full-stack task management application with real-time updates and collaborative features.",
-    "technologies": ["React", "Node.js", "MongoDB", "Socket.io"],
-    "status": "completed",
-    "demo": "#",
-    "github": "#"
-  },
-  {
-    "id": 3,
-    "name": "Weather Dashboard",
-    "description": "Beautiful weather dashboard with location-based forecasts and interactive charts.",
-    "technologies": ["Vue.js", "Chart.js", "OpenWeather API", "SCSS"],
-    "status": "completed",
-    "demo": "#",
-    "github": null
-  },
-  {
-    "id": 4,
-    "name": "E-commerce Platform",
-    "description": "Modern e-commerce platform with payment integration and admin dashboard.",
-    "technologies": ["Next.js", "Stripe", "PostgreSQL", "Prisma"],
-    "status": "in-progress",
-    "demo": null,
-    "github": "#"
-  },
-  {
-    "id": 5,
-    "name": "Blog CMS",
-    "description": "Headless CMS for blog management with markdown support and SEO optimization.",
-    "technologies": ["Nuxt.js", "Strapi", "Markdown", "Cloudinary"],
-    "status": "completed",
-    "demo": "#",
-    "github": "#"
-  },
-  {
-    "id": 6,
-    "name": "Chat Application",
-    "description": "Real-time chat application with rooms, file sharing, and emoji reactions.",
-    "technologies": ["Socket.io", "Express.js", "Redis", "JWT"],
-    "status": "completed",
-    "demo": "#",
-    "github": "#"
-  }
+    {
+        "id": 1,
+        "name": "ConversAI",
+        "description": "AI video generation pipeline that automatically creates multilingual video content with popular characters using F5-TTS. Deployed on AWS with an auto-scaling workflow using SQS and Lambda because, well, GPUs are expensive ;_;",
+        "technologies": [
+            "Vue.js",
+            "FastAPI",
+            "FFmpeg",
+            "F5-TTS",
+            "AWS"
+        ],
+        "status": "completed",
+        "demo": null,
+        "github": null
+    },
+    {
+        "id": 3,
+        "name": "BITS Payment Interface (BPI)",
+        "description": "High-concurrency, secure payments platform built for BITS Pilani Goa Campus. Handled ~₹6M in peak transactions over 3 days with encrypted token-based sessions, robust logging and monitoring for troubleshooting under load.",
+        "technologies": [
+            "Flutter",
+            "Node.js",
+            "MongoDB",
+            "Azure"
+        ],
+        "status": "completed",
+        "demo": null,
+        "github": null
+    },
+    {
+        "id": 2,
+        "name": "Semantic Code Search Engine",
+        "description": "Rust-powered code search engine that uses semantic dataflows to find errors and navigate massive projects. Think of it as Ctrl+F but on steroids. Extended ideas presented in an existing ACM research paper for error detection.",
+        "technologies": [
+            "Rust",
+            "Scala"
+        ],
+        "status": "completed",
+        "demo": null,
+        "github": "https://github.com/fizy069/semantic-code-search-mono"
+    }
 ]
