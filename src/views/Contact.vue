@@ -1,132 +1,20 @@
 <template>
   <div class="contact">
     <h1>Contact</h1>
-    
+
     <p>Get in touch with me for collaboration opportunities, questions, or just to say hello.</p>
 
     <div class="contact-info">
       <h2>Contact Information</h2>
-      <p><strong>Email:</strong> <a href="mailto:hello@developer.dev">hello@developer.dev</a></p>
-      <p><strong>LinkedIn:</strong> <a href="#" target="_blank">linkedin.com/in/developer</a></p>
-      <p><strong>GitHub:</strong> <a href="#" target="_blank">github.com/developer</a></p>
-      <p><strong>Twitter:</strong> <a href="#" target="_blank">twitter.com/dev_handle</a></p>
-      <p><strong>Location:</strong> Remote / Available for travel</p>
-      <p><strong>Response Time:</strong> Within 24 hours</p>
+      <p><strong>Email:</strong> <a href="mailto:mf0tdnxo7@mozmail.com">mf0tdnxo7@mozmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mahirg/" target="_blank">https://www.linkedin.com/in/mahirg/</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/fizy069" target="_blank">https://github.com/fizy069</a></p>
+      <p><strong>Twitter:</strong> <a href="https://x.com/fizy_069" target="_blank">https://x.com/fizy_069</a></p>
     </div>
 
-    <!-- <div class="contact-form">
-      <h2>Send a Message</h2>
-      <form @submit.prevent="handleSubmit">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input 
-            id="name"
-            v-model="form.name"
-            type="text"
-            required
-            placeholder="Your name"
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input 
-            id="email"
-            v-model="form.email"
-            type="email"
-            required
-            placeholder="your.email@domain.com"
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <input 
-            id="subject"
-            v-model="form.subject"
-            type="text"
-            required
-            placeholder="Brief subject line"
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea 
-            id="message"
-            v-model="form.message"
-            required
-            placeholder="Your message here..."
-            rows="6"
-          ></textarea>
-        </div>
-
-        <div class="form-actions">
-          <button type="submit" :disabled="isSubmitting">
-            {{ isSubmitting ? 'Sending...' : 'Send Message' }}
-          </button>
-          <button type="button" @click="clearForm">
-            Clear Form
-          </button>
-        </div>
-      </form>
-
-      <div v-if="submitMessage" class="submit-feedback" :class="{ success: isSuccess, error: !isSuccess }">
-        {{ submitMessage }}
-      </div>
-    </div>-->
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue'
-
-const isSubmitting = ref(false)
-const submitMessage = ref('')
-const isSuccess = ref(false)
-
-const form = ref({
-  name: '',
-  email: '',
-  subject: '',
-  message: ''
-})
-
-const handleSubmit = async () => {
-  isSubmitting.value = true
-  submitMessage.value = ''
-  
-  // Simulate form submission
-  try {
-    await new Promise(resolve => setTimeout(resolve, 1500))
-    
-    // Simulate success
-    isSuccess.value = true
-    submitMessage.value = 'Message sent successfully! I\'ll get back to you soon.'
-    
-    // Clear form after successful submission
-    setTimeout(() => {
-      clearForm()
-      submitMessage.value = ''
-    }, 3000)
-    
-  } catch (error) {
-    isSuccess.value = false
-    submitMessage.value = 'Failed to send message. Please try again or contact me directly via email.'
-  } finally {
-    isSubmitting.value = false
-  }
-}
-
-const clearForm = () => {
-  form.value = {
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  }
-}
-</script>
 
 <style scoped>
 .contact-info {
@@ -246,7 +134,7 @@ const clearForm = () => {
   .form-actions {
     flex-direction: column;
   }
-  
+
   .form-actions button {
     width: 100%;
   }
