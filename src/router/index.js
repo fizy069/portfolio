@@ -14,11 +14,6 @@ const router = createRouter({
       component: Home
     },
     {
-      path: '/about',
-      name: 'About',
-      component: About
-    },
-    {
       path: '/projects',
       name: 'Projects',
       component: Projects
@@ -32,7 +27,13 @@ const router = createRouter({
       path: '/contact',
       name: 'Contact',
       component: Contact
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: () => import('@/views/Fallback.vue')
     }
+
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
