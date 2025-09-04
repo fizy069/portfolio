@@ -129,12 +129,13 @@ const filteredArticles = computed(() => {
 }
 
 .article-item {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.6rem 0.7rem;
   background: #fafbfc;
-  border-radius: 6px;
-  border-left: 3px solid #0066cc;
+  border-radius: 4px;
+  border-left: 2px solid #0066cc;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 0.92rem;
 }
 
 .article-item:hover {
@@ -144,15 +145,15 @@ const filteredArticles = computed(() => {
 
 .article-item h3 {
   color: #333;
-  margin-bottom: 0.8rem;
-  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
   font-weight: 600;
 }
 
 .article-meta {
   color: #666666;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
+  font-size: 0.78rem;
+  margin-bottom: 0.7rem;
 }
 
 .article-date {
@@ -166,10 +167,10 @@ const filteredArticles = computed(() => {
 .tag {
   background-color: #f0f0f0;
   color: #666666;
-  padding: 0.25rem 0.5rem;
-  border-radius: 3px;
-  font-size: 0.8rem;
-  margin-right: 0.5rem;
+  padding: 0.18rem 0.38rem;
+  border-radius: 2px;
+  font-size: 0.7rem;
+  margin-right: 0.35rem;
 }
 
 .read-more {

@@ -1,9 +1,9 @@
 <template>
   <div class="home">
     <section class="hero">
-      <h1>Mahir G.</h1>
+      <h1>mahir</h1>
       <p class="description">
-        i'm a final year student at bits pilani, goa campus, with hands-on experience in backend systems, web3, and applied ai.
+        i'm a final year student at bits pilani, goa campus, with hands-on experience in mobile app development, backend systems, web3, and applied ai.
       </p>
       <p class="contact-link-intro">
         <router-link to="/contact">get in touch →</router-link>

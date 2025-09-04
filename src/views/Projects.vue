@@ -67,7 +67,7 @@ const projects = ref([
     technologies: ['Vue.js', 'Chart.js', 'OpenWeather API', 'SCSS'],
     status: 'completed',
     demo: '#',
-    github: '#'
+    github: null
   },
   {
     id: 4,
@@ -116,12 +116,13 @@ const projects = ref([
 }
 
 .project-item {
-  margin-bottom: 1.5rem;
-  padding: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.6rem 0.7rem;
   background: #fafbfc;
-  border-radius: 6px;
-  border-left: 3px solid #0066cc;
+  border-radius: 4px;
+  border-left: 2px solid #0066cc;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 0.92rem;
 }
 
 .project-item:hover {
@@ -138,15 +139,15 @@ const projects = ref([
 
 .project-header h3 {
   color: #333;
-  font-size: 1.3rem;
+  font-size: 1.05rem;
   font-weight: 600;
   margin: 0;
 }
 
 .project-status {
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
+  padding: 0.18rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -163,9 +164,9 @@ const projects = ref([
 
 .project-description {
   color: #555;
-  line-height: 1.6;
-  margin-bottom: 1.2rem;
-  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .project-tech {
@@ -192,11 +193,11 @@ const projects = ref([
   color: #0066cc;
   text-decoration: none;
   font-weight: 500;
-  padding: 0.5rem 1rem;
+  padding: 0.32rem 0.7rem;
   border: 1px solid #0066cc;
-  border-radius: 5px;
+  border-radius: 3px;
   transition: all 0.2s ease;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .project-link:hover {
