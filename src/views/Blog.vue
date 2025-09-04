@@ -2,7 +2,7 @@
   <div class="blog">
     <h1>Writing</h1>
     
-    <p>Articles and thoughts about web development, programming, and technology.</p>
+    <!-- <p>Articles and thoughts.</p> -->
 
     <div class="search-section">
       <input 

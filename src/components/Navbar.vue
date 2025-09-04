@@ -29,7 +29,7 @@ const isMenuOpen = ref(false)
 
 const navItems = [
   { path: '/', name: 'Home' },
-  { path: '/about', name: 'About' },
+  // { path: '/about', name: 'About' },
   { path: '/projects', name: 'Projects' },
   { path: '/blog', name: 'Writing' },
   { path: '/contact', name: 'Contact' }
