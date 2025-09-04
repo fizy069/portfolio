@@ -1,8 +1,8 @@
-# portfolio-site
-
-Simple portfolio site :)
+# Simple portfolio site :)
 
 You can fork the repo and modify /src/data/ if you wish to reuse my template.
+
+
 
 ## Project Setup
 
