@@ -1,9 +1,9 @@
 <template>
   <div class="home">
     <section class="hero">
-      <h1>mahir</h1>
+      <h1>{{ content.hero.title }}</h1>
       <p class="description">
-        i'm a final year student at bits pilani, goa campus, with hands-on experience in mobile app development, backend systems, web3, and applied ai.
+        {{ content.hero.description }}
       </p>
       <p class="contact-link-intro">
         <router-link to="/contact">get in touch →</router-link>
@@ -12,20 +12,12 @@
 
     <section class="content-grid">
       <div class="recent-work">
-        <h2>Recent Work</h2>
+        <h2>{{ content.recentWork.title }}</h2>
         <div class="work-list">
-          <div class="work-item">
-            <h4>E-commerce Platform Redesign</h4>
-            <p>Led frontend development for a complete platform overhaul, resulting in 40% improvement in conversion rates.</p>
+          <div v-for="work in content.recentWork.items" :key="work.id" class="work-item">
+            <h4>{{ work.title }}</h4>
+            <p>{{ work.description }}</p>
           </div>
-          <div class="work-item">
-            <h4>Real-time Analytics Dashboard</h4>
-            <p>Built a Vue.js dashboard with WebSocket integration for live data visualization and reporting.</p>
-          </div>
-          <!-- <div class="work-item">
-            <h4>API Microservices Architecture</h4>
-            <p>Designed and implemented scalable Node.js microservices handling 10M+ requests daily.</p>
-          </div> -->
         </div>
         <p class="view-more">
           <router-link to="/projects">View all projects →</router-link>
@@ -33,16 +25,11 @@
       </div>
 
       <div class="latest-writing">
-        <h2>Latest Writing</h2>
-        <div class="article-preview">
-          <h4>Building Modern Web Applications with Vue.js 3</h4>
-          <p>Exploring the latest features including Composition API and performance improvements...</p>
-          <span class="article-date">March 15, 2024</span>
-        </div>
-        <div class="article-preview">
-          <h4>Mastering CSS Grid: A Complete Guide</h4>
-          <p>Comprehensive guide to CSS Grid Layout. From basic concepts to advanced techniques...</p>
-          <span class="article-date">March 10, 2024</span>
+        <h2>{{ content.latestWriting.title }}</h2>
+        <div v-for="article in content.latestWriting.items" :key="article.id" class="article-preview">
+          <h4>{{ article.title }}</h4>
+          <p>{{ article.excerpt }}</p>
+          <span class="article-date">{{ article.date }}</span>
         </div>
         <p class="view-more">
           <router-link to="/blog">Read all articles →</router-link>
@@ -53,6 +40,10 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+import homeContentData from '@/data/homeContent.json'
+
+const content = ref(homeContentData)
 </script>
 
 <style scoped>

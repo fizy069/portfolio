@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Building Modern Web Applications with Vue.js 3",
+    "date": "2024-03-15",
+    "readTime": 8,
+    "tags": ["vue", "javascript", "frontend"],
+    "excerpt": "Explore the latest features of Vue.js 3 including the Composition API, better TypeScript support, and improved performance. Learn how to build scalable applications with modern development practices."
+  },
+  {
+    "id": 2,
+    "title": "Mastering CSS Grid: A Complete Guide",
+    "date": "2024-03-10",
+    "readTime": 12,
+    "tags": ["css", "layout", "responsive"],
+    "excerpt": "Comprehensive guide to CSS Grid Layout. From basic concepts to advanced techniques, learn how to create complex, responsive layouts with minimal code."
+  },
+  {
+    "id": 3,
+    "title": "Node.js Performance Optimization Strategies",
+    "date": "2024-03-05",
+    "readTime": 15,
+    "tags": ["nodejs", "performance", "backend"],
+    "excerpt": "Deep dive into Node.js performance optimization. Learn about event loop optimization, memory management, caching strategies, and monitoring tools."
+  },
+  {
+    "id": 4,
+    "title": "TypeScript Best Practices for Large Projects",
+    "date": "2024-02-28",
+    "readTime": 10,
+    "tags": ["typescript", "best-practices", "architecture"],
+    "excerpt": "Essential TypeScript patterns and practices for maintainable large-scale applications. Cover type safety, modular architecture, and testing strategies."
+  },
+  {
+    "id": 5,
+    "title": "Understanding JavaScript Closures and Scope",
+    "date": "2024-02-20",
+    "readTime": 6,
+    "tags": ["javascript", "fundamentals", "concepts"],
+    "excerpt": "Master one of JavaScript's most important concepts. Learn how closures work, their practical applications, and common pitfalls to avoid."
+  },
+  {
+    "id": 6,
+    "title": "Building RESTful APIs with Express.js",
+    "date": "2024-02-15",
+    "readTime": 14,
+    "tags": ["express", "api", "backend"],
+    "excerpt": "Complete guide to building robust RESTful APIs using Express.js. Cover routing, middleware, authentication, error handling, and testing."
+  }
+]

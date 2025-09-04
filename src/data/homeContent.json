@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "title": "mahir",
+    "description": "i'm a final year student at bits pilani, goa campus, with hands-on experience in mobile app development, backend systems, web3, and applied ai."
+  },
+  "recentWork": {
+    "title": "Recent Work",
+    "items": [
+      {
+        "id": 1,
+        "title": "E-commerce Platform Redesign",
+        "description": "Led frontend development for a complete platform overhaul, resulting in 40% improvement in conversion rates."
+      },
+      {
+        "id": 2,
+        "title": "Real-time Analytics Dashboard",
+        "description": "Built a Vue.js dashboard with WebSocket integration for live data visualization and reporting."
+      }
+    ]
+  },
+  "latestWriting": {
+    "title": "Latest Writing",
+    "items": [
+      {
+        "id": 1,
+        "title": "Building Modern Web Applications with Vue.js 3",
+        "excerpt": "Exploring the latest features including Composition API and performance improvements...",
+        "date": "March 15, 2024"
+      },
+      {
+        "id": 2,
+        "title": "Mastering CSS Grid: A Complete Guide",
+        "excerpt": "Comprehensive guide to CSS Grid Layout. From basic concepts to advanced techniques...",
+        "date": "March 10, 2024"
+      }
+    ]
+  }
+}

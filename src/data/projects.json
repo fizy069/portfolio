@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Portfolio Website",
+    "description": "A responsive portfolio website built with Vue.js featuring clean design and smooth user experience.",
+    "technologies": ["Vue.js", "CSS3", "JavaScript", "Vite"],
+    "status": "completed",
+    "demo": "#",
+    "github": "#"
+  },
+  {
+    "id": 2,
+    "name": "Task Manager App",
+    "description": "Full-stack task management application with real-time updates and collaborative features.",
+    "technologies": ["React", "Node.js", "MongoDB", "Socket.io"],
+    "status": "completed",
+    "demo": "#",
+    "github": "#"
+  },
+  {
+    "id": 3,
+    "name": "Weather Dashboard",
+    "description": "Beautiful weather dashboard with location-based forecasts and interactive charts.",
+    "technologies": ["Vue.js", "Chart.js", "OpenWeather API", "SCSS"],
+    "status": "completed",
+    "demo": "#",
+    "github": null
+  },
+  {
+    "id": 4,
+    "name": "E-commerce Platform",
+    "description": "Modern e-commerce platform with payment integration and admin dashboard.",
+    "technologies": ["Next.js", "Stripe", "PostgreSQL", "Prisma"],
+    "status": "in-progress",
+    "demo": null,
+    "github": "#"
+  },
+  {
+    "id": 5,
+    "name": "Blog CMS",
+    "description": "Headless CMS for blog management with markdown support and SEO optimization.",
+    "technologies": ["Nuxt.js", "Strapi", "Markdown", "Cloudinary"],
+    "status": "completed",
+    "demo": "#",
+    "github": "#"
+  },
+  {
+    "id": 6,
+    "name": "Chat Application",
+    "description": "Real-time chat application with rooms, file sharing, and emoji reactions.",
+    "technologies": ["Socket.io", "Express.js", "Redis", "JWT"],
+    "status": "completed",
+    "demo": "#",
+    "github": "#"
+  }
+]
