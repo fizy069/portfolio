@@ -7,10 +7,13 @@
         </router-link>
       </div>
 
-      <div class="nav-toggle" @click="toggleMenu">
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
+      <div class="nav-controls">
+        <ThemeSwitch />
+        <div class="nav-toggle" @click="toggleMenu" :class="{ active: isMenuOpen }">
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </div>
       </div>
     </div>
   </nav>
@@ -18,6 +21,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import ThemeSwitch from '@/components/ThemeSwitch.vue'
 
 const isMenuOpen = ref(false)
 
@@ -40,10 +44,11 @@ const closeMenu = () => {
 
 <style scoped>
 .navbar {
-  background: #ffffff;
-  border-bottom: 1px solid #e0e0e0;
+  background: var(--navbar-bg);
+  border-bottom: 1px solid var(--navbar-border);
   padding: 1rem 0;
   font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .nav-container {
@@ -52,7 +57,7 @@ const closeMenu = () => {
   padding: 0 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
 }
 
@@ -60,21 +65,31 @@ const closeMenu = () => {
   display: flex;
   align-items: center;
   gap: 2rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  right: 1rem;
 }
 
 .nav-link {
   text-decoration: none;
-  color: #333333;
+  color: var(--text-color);
   transition: color 0.2s ease;
 }
 
 .nav-link:hover {
-  color: #0066cc;
+  color: var(--primary-color);
   text-decoration: underline;
 }
 
 .nav-link.router-link-active {
-  color: #0066cc;
+  color: var(--primary-color);
 }
 
 .nav-toggle {
@@ -83,20 +98,34 @@ const closeMenu = () => {
   cursor: pointer;
   padding: 4px;
   gap: 4px;
-  position: absolute;
-  right: 1rem;
 }
 
 .hamburger {
   width: 20px;
   height: 2px;
-  background: #333333;
+  background: var(--text-color);
   transition: all 0.3s ease;
   border-radius: 1px;
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+  .nav-container {
+    justify-content: center;
+  }
+
+  .nav-menu {
+    position: static;
+    flex: none;
+    justify-content: center;
+  }
+
+  .nav-controls {
+    position: absolute;
+    right: 1rem;
+    gap: 0.75rem;
+  }
+
   .nav-toggle {
     display: flex;
   }
@@ -106,8 +135,8 @@ const closeMenu = () => {
     top: 70px;
     left: 0;
     right: 0;
-    background: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
+    background: var(--navbar-bg);
+    border-bottom: 1px solid var(--navbar-border);
     flex-direction: column;
     align-items: stretch;
     padding: 1rem;
@@ -116,6 +145,7 @@ const closeMenu = () => {
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
+    z-index: 1000;
   }
 
   .nav-menu.active {
@@ -125,7 +155,8 @@ const closeMenu = () => {
   }
 
   .nav-link {
-    padding: 0.5rem 0;
+    padding: 0.75rem 0;
+    text-align: center;
   }
 
   /* Animation for mobile menu toggle */
