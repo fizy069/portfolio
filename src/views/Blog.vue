@@ -1,5 +1,5 @@
 <template>
-  <div class="blog">
+  <!-- <div class="blog">
     <h1>blog</h1>
     
     <p>excerpts on my thoughts and some of the stuff i built.</p>
@@ -34,7 +34,8 @@
     <div v-if="filteredArticles.length === 0" class="no-results">
       <p>No articles found matching your search.</p>
     </div>
-  </div>
+  </div> -->
+  <p>coming soon! </p>
 </template>
 
 <script setup>

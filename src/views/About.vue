@@ -1,65 +1,55 @@
 <template>
   <div class="about">
     <div class="about-intro">
-      <h1>About Me</h1>
-      <p class="lead">
-        I'm John, a passionate software developer with 3+ years of experience building 
-        modern web applications. I believe in writing clean, maintainable code and creating 
-        digital experiences that users love.
-      </p>
+      <h1>a bit more about me</h1>
+      <!-- <p>
+        i work on what
+      </p> -->
     </div>
 
     <div class="about-content">
-      <section class="journey">
-        <h2>My Journey</h2>
-        <p>
-          My path into software development started during university when I built my first 
-          web application. What began as curiosity quickly became a passion for creating 
-          solutions that solve real problems.
-        </p>
-        <p>
-          Over the years, I've worked across the full stack, from crafting user interfaces 
-          to designing scalable backend systems. I enjoy the challenge of turning complex 
-          requirements into elegant, working software.
-        </p>
-      </section>
 
       <section class="experience">
-        <h2>Professional Experience</h2>
+        <h2>experience</h2>
         <div class="experience-list">
           <div class="experience-item">
             <div class="role-header">
-              <h3>Full Stack Developer</h3>
-              <span class="company">Tech Company</span>
-              <span class="duration">2022 - Present</span>
+              <h3>Technical Intern</h3>
+              <span class="company">Cisco, Bangalore</span>
+              <span class="duration">May 2025 – July 2025</span>
             </div>
-            <p>Leading frontend development on customer-facing applications with Vue.js and Node.js. 
-               Improved application performance by 35% and mentored junior developers.</p>
+            <p>Developing an advanced AI agent for Excel analytics as part of Cisco’s RAG and internal AI initiatives, capable of performing deep analytical queries and summarizations over structured financial and operational spreadsheets. Engineered a functional tool-calling architecture that dynamically converts Excel data into SQL-like structures, enabling precise data retrieval and semantic reasoning across complex sheets.</p>
           </div>
           
           <div class="experience-item">
             <div class="role-header">
-              <h3>Frontend Developer</h3>
-              <span class="company">Startup Inc</span>
-              <span class="duration">2021 - 2022</span>
+              <h3>AI Consultant</h3>
+              <span class="company">Formidium</span>
+              <span class="duration">Mar 2025 – May 2025</span>
             </div>
-            <p>Developed responsive user interfaces and improved user experience for B2B applications. 
-               Collaborated closely with design and product teams.</p>
+            <p>Built an enterprise-grade RAG platform for financial document Q&A, supporting multi-format inputs (PDF, DOCX, Excel, CSV) and enabling contextual queries on complex fund documents. Developed advanced document pipelines with for table/image parsing and chunking strategies tailored to financial text, integrated with GPT-4 and embedding models for summarization and semantic search. Deployed using Pinecone for vector search, MongoDB Atlas for metadata storage, FastAPI with async endpoints, and Docker for portability and scalability.</p>
           </div>
 
           <div class="experience-item">
             <div class="role-header">
-              <h3>Junior Developer</h3>
-              <span class="company">Digital Agency</span>
-              <span class="duration">2020 - 2021</span>
+              <h3>Head of App Development</h3>
+              <span class="company">Developers’ Society, BITS Goa</span>
+              <span class="duration">May 2024 – May 2025</span>
             </div>
-            <p>Built websites for various clients and learned modern web development practices. 
-               Gained experience with multiple frameworks and deployment strategies.</p>
+            <p>Led a team of 40+ core members of the club who work on impactful software projects. Maintainer for the repositories containing essential research projects and other campus-level projects.</p>
           </div>
         </div>
       </section>
 
-      <section class="skills">
+      <section class="achievements">
+        <h2>hackathons</h2>
+        <ul>
+          <li><strong>Dezerv Hackathon Winner:</strong> Built Splitwise on steroids, with automated UPI payment tracking and Agentic AI based expense analysis.</li>
+          <li><strong>Quark National Hackathon:</strong> Developed a platform using the Reclaim Protocol to streamline order data and deliver actionable analytics to clients.</li>
+        </ul>
+      </section>
+
+      <!-- <section class="skills">
         <h2>Technical Skills</h2>
         <div class="skills-grid">
           <div class="skill-category">
@@ -75,9 +65,9 @@
             <p>PostgreSQL, MongoDB, Git, Docker, AWS, Testing frameworks</p>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="interests">
+      <!-- <section class="interests">
         <h2>Beyond Coding</h2>
         <p>
           When I'm not writing code, you'll find me reading about emerging technologies, 
@@ -89,13 +79,12 @@
           I also enjoy photography, hiking, and occasionally writing about technology 
           and development practices on my blog.
         </p>
-      </section>
+      </section> -->
     </div>
   </div>
 </template>
 
 <script setup>
-// Simple about page - no complex logic needed
 </script>
 
 <style scoped>
@@ -136,21 +125,21 @@
 }
 
 .experience-item {
-  margin-bottom: 2.5rem;
-  padding: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1.2rem;
   background: #fafbfc;
   border-radius: 8px;
   border-left: 4px solid #0066cc;
 }
 
 .role-header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .role-header h3 {
   color: #333;
-  font-size: 1.2rem;
-  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
   font-weight: 600;
 }
 
@@ -158,16 +147,29 @@
   color: #0066cc;
   font-weight: 600;
   margin-right: 1rem;
+  font-size: 0.95rem;
 }
 
 .duration {
   color: #777;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .experience-item p {
   color: #555;
-  line-height: 1.6;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.achievements ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.achievements li {
+  margin-bottom: 0.8rem;
 }
 
 .skills-grid {

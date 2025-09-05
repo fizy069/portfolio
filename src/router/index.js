@@ -29,6 +29,11 @@ const router = createRouter({
       component: Contact
     },
     {
+      path: '/about',
+      name: 'About',
+      component: About
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
       component: () => import('@/views/Fallback.vue')
