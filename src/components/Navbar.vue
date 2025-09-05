@@ -2,13 +2,7 @@
   <nav class="navbar">
     <div class="nav-container">
       <div class="nav-menu" :class="{ active: isMenuOpen }">
-        <router-link 
-          v-for="item in navItems" 
-          :key="item.path"
-          :to="item.path" 
-          class="nav-link"
-          @click="closeMenu"
-        >
+        <router-link v-for="item in navItems" :key="item.path" :to="item.path" class="nav-link" @click="closeMenu">
           {{ item.name }}
         </router-link>
       </div>
@@ -29,9 +23,9 @@ const isMenuOpen = ref(false)
 
 const navItems = [
   { path: '/', name: 'home' },
-  { path: '/about', name: 'about' },
   { path: '/projects', name: 'projects' },
   { path: '/blog', name: ' blog' },
+  { path: '/about', name: 'about' },
   { path: '/contact', name: 'contact' }
 ]
 

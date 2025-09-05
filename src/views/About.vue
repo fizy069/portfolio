@@ -2,9 +2,6 @@
   <div class="about">
     <div class="about-intro">
       <h1>a bit more about me</h1>
-      <!-- <p>
-        i work on what
-      </p> -->
     </div>
 
     <div class="about-content">
@@ -18,7 +15,7 @@
               <span class="company">Cisco, Bangalore</span>
               <span class="duration">May 2025 – July 2025</span>
             </div>
-            <p>Developing an advanced AI agent for Excel analytics as part of Cisco’s RAG and internal AI initiatives, capable of performing deep analytical queries and summarizations over structured financial and operational spreadsheets. Engineered a functional tool-calling architecture that dynamically converts Excel data into SQL-like structures, enabling precise data retrieval and semantic reasoning across complex sheets.</p>
+            <p>Developed an AI agent for data analysis as part of Cisco’s RAG and internal AI initiatives, capable of performing deep analytical queries and summarizations over structured operational spreadsheets. Engineered a functional tool-calling architecture that dynamically converts Excel data into SQL-like structures, enabling precise data retrieval and semantic reasoning across complex sheets.</p>
           </div>
           
           <div class="experience-item">
@@ -44,8 +41,8 @@
       <section class="achievements">
         <h2>hackathons</h2>
         <ul>
-          <li><strong>Dezerv Hackathon Winner:</strong> Built Splitwise on steroids, with automated UPI payment tracking and Agentic AI based expense analysis.</li>
-          <li><strong>Quark National Hackathon:</strong> Developed a platform using the Reclaim Protocol to streamline order data and deliver actionable analytics to clients.</li>
+          <li><strong>Dezerv Hackathon Winner:</strong> built Splitwise on steroids - automatically detects UPI payments and categorizes them, also provides insights on expenditure using an Agent.</li>
+          <li><strong>Quark National Hackathon:</strong> developed a platform using the Reclaim Protocol to streamline order data and deliver actionable analytics to clients.</li>
         </ul>
       </section>
 
