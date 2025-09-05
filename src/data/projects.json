@@ -15,7 +15,7 @@
         "github": null
     },
     {
-        "id": 3,
+        "id": 2,
         "name": "BITS Payment Interface (BPI)",
         "description": "High-concurrency, secure payments platform built for BITS Pilani Goa Campus. Handled ~₹6M in peak transactions over 3 days with encrypted token-based sessions, robust logging and monitoring for troubleshooting under load.",
         "technologies": [
@@ -29,12 +29,27 @@
         "github": null
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "Semantic Code Search Engine",
         "description": "Rust-powered code search engine that uses semantic dataflows to find errors and navigate massive projects. Think of it as Ctrl+F but on steroids. Extended ideas presented in an existing ACM research paper for error detection.",
         "technologies": [
             "Rust",
             "Scala"
+        ],
+        "status": "completed",
+        "demo": null,
+        "github": "https://github.com/fizy069/semantic-code-search-mono"
+    },
+    {
+        "id": 4,
+        "name": "Investment Advisory Bot",
+        "description": "AI chatbot that provides personalized investment advice after analyzing fund related documents like PPM, Subscription Agreement, etc. The hard part was developing the optimal chunking strategy for these kind of documents.",
+        "technologies": [
+            "Python",
+            "LangChain",
+            "FastAPI",
+            "Pinecone",
+            "MongoDB"
         ],
         "status": "completed",
         "demo": null,
