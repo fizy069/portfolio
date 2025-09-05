@@ -1,0 +1,35 @@
+{
+  "intro": {
+    "title": "a bit more about me"
+  },
+  "experience": {
+    "title": "experience",
+    "items": [
+      {
+        "role": "Technical Intern",
+        "company": "Cisco, Bangalore",
+        "duration": "May 2025 – July 2025",
+        "description": "Developed an AI agent for data analysis as part of Cisco's RAG and internal AI initiatives, capable of performing deep analytical queries and summarizations over structured operational spreadsheets. Engineered a functional tool-calling architecture that dynamically converts Excel data into SQL-like structures, enabling precise data retrieval and semantic reasoning across complex sheets."
+      },
+      {
+        "role": "AI Consultant",
+        "company": "Formidium",
+        "duration": "Mar 2025 – May 2025",
+        "description": "Built an enterprise-grade RAG platform for financial document Q&A, supporting multi-format inputs (PDF, DOCX, Excel, CSV) and enabling contextual queries on complex fund documents. Developed advanced document pipelines with for table/image parsing and chunking strategies tailored to financial text, integrated with GPT-4 and embedding models for summarization and semantic search. Deployed using Pinecone for vector search, MongoDB Atlas for metadata storage, FastAPI with async endpoints, and Docker for portability and scalability."
+      },
+      {
+        "role": "Head of App Development",
+        "company": "Developers' Society, BITS Goa",
+        "duration": "May 2024 – May 2025",
+        "description": "Led a team of 40+ core members of the club who work on impactful software projects. Maintainer for the repositories containing essential research projects and other campus-level projects."
+      }
+    ]
+  },
+  "achievements": {
+    "title": "hackathons",
+    "items": [
+      "Dezerv Hackathon Winner: built Splitwise on steroids - automatically detects UPI payments and categorizes them, also provides insights on expenditure using an Agent.",
+      "Quark National Hackathon: developed a platform using the Reclaim Protocol to streamline order data and deliver actionable analytics to clients."
+    ]
+  }
+}

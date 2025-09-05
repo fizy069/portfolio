@@ -1,48 +1,29 @@
 <template>
   <div class="about">
     <div class="about-intro">
-      <h1>a bit more about me</h1>
+      <h1>{{ content.intro.title }}</h1>
     </div>
 
     <div class="about-content">
 
       <section class="experience">
-        <h2>experience</h2>
+        <h2>{{ content.experience.title }}</h2>
         <div class="experience-list">
-          <div class="experience-item">
+          <div v-for="item in content.experience.items" :key="item.role" class="experience-item">
             <div class="role-header">
-              <h3>Technical Intern</h3>
-              <span class="company">Cisco, Bangalore</span>
-              <span class="duration">May 2025 – July 2025</span>
+              <h3>{{ item.role }}</h3>
+              <span class="company">{{ item.company }}</span>
+              <span class="duration">{{ item.duration }}</span>
             </div>
-            <p>Developed an AI agent for data analysis as part of Cisco’s RAG and internal AI initiatives, capable of performing deep analytical queries and summarizations over structured operational spreadsheets. Engineered a functional tool-calling architecture that dynamically converts Excel data into SQL-like structures, enabling precise data retrieval and semantic reasoning across complex sheets.</p>
-          </div>
-          
-          <div class="experience-item">
-            <div class="role-header">
-              <h3>AI Consultant</h3>
-              <span class="company">Formidium</span>
-              <span class="duration">Mar 2025 – May 2025</span>
-            </div>
-            <p>Built an enterprise-grade RAG platform for financial document Q&A, supporting multi-format inputs (PDF, DOCX, Excel, CSV) and enabling contextual queries on complex fund documents. Developed advanced document pipelines with for table/image parsing and chunking strategies tailored to financial text, integrated with GPT-4 and embedding models for summarization and semantic search. Deployed using Pinecone for vector search, MongoDB Atlas for metadata storage, FastAPI with async endpoints, and Docker for portability and scalability.</p>
-          </div>
-
-          <div class="experience-item">
-            <div class="role-header">
-              <h3>Head of App Development</h3>
-              <span class="company">Developers’ Society, BITS Goa</span>
-              <span class="duration">May 2024 – May 2025</span>
-            </div>
-            <p>Led a team of 40+ core members of the club who work on impactful software projects. Maintainer for the repositories containing essential research projects and other campus-level projects.</p>
+            <p>{{ item.description }}</p>
           </div>
         </div>
       </section>
 
       <section class="achievements">
-        <h2>hackathons</h2>
+        <h2>{{ content.achievements.title }}</h2>
         <ul>
-          <li><strong>Dezerv Hackathon Winner:</strong> built Splitwise on steroids - automatically detects UPI payments and categorizes them, also provides insights on expenditure using an Agent.</li>
-          <li><strong>Quark National Hackathon:</strong> developed a platform using the Reclaim Protocol to streamline order data and deliver actionable analytics to clients.</li>
+          <li v-for="item in content.achievements.items" :key="item" v-html="item"></li>
         </ul>
       </section>
 
@@ -82,6 +63,10 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+import aboutContentData from '@/data/aboutContent.json'
+
+const content = ref(aboutContentData)
 </script>
 
 <style scoped>

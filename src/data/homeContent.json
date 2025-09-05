@@ -1,20 +1,20 @@
 {
   "hero": {
-    "title": "mahir",
-    "description": "i'm a final year student at bits pilani, goa campus, with hands-on experience in mobile app development, backend systems and applied ai.\n i'm currently exploring rust and web3."
+    "title": "hello :)",
+    "description": "i'm mahir, a final year student at bits pilani, goa campus. i've worked extensively on mobile app development, backend systems and applied ai.\n  of late, i've been exploring rust and web3."
   },
   "recentWork": {
     "title": "Recent Work",
     "items": [
       {
         "id": 1,
-        "title": "E-commerce Platform Redesign",
-        "description": "Led frontend development for a complete platform overhaul, resulting in 40% improvement in conversion rates."
+        "title": "BITS Payment Interface",
+        "description" : "high concurrency, secure payment platform built for BITS Goa."
       },
       {
         "id": 2,
-        "title": "Real-time Analytics Dashboard",
-        "description": "Built a Vue.js dashboard with WebSocket integration for live data visualization and reporting."
+        "title": "Stellar Agent (Cisco)",
+        "description": "built an ai agent for data analysis as part of cisco's rag and internal ai initiatives."
       }
     ]
   },
@@ -23,15 +23,9 @@
     "items": [
       {
         "id": 1,
-        "title": "Building Modern Web Applications with Vue.js 3",
-        "excerpt": "Exploring the latest features including Composition API and performance improvements...",
-        "date": "March 15, 2024"
-      },
-      {
-        "id": 2,
-        "title": "Mastering CSS Grid: A Complete Guide",
-        "excerpt": "Comprehensive guide to CSS Grid Layout. From basic concepts to advanced techniques...",
-        "date": "March 10, 2024"
+        "title": "blogs coming soon!",
+        "excerpt": "...",
+        "date": ""
       }
     ]
   }
